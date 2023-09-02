@@ -5,6 +5,8 @@ document.getElementById('case-up').addEventListener('click', function(){
 document.getElementById('case-down').addEventListener('click', function(){
     casequantity(false);
 })
+const caseNumber = document.getElementById('casevalue');
+caseNumber.value = 0;
 
 function casequantity(isincress){
     const caseNumber = document.getElementById('casevalue');
@@ -28,13 +30,15 @@ function casequantity(isincress){
 
 document.getElementById('mobile-up').addEventListener('click', function(){
     mobilequantity(true);
-    mobilecount.value = 0;
 })
 
 document.getElementById('mobile-down').addEventListener('click',  function(){
     mobilequantity(false);
     
 })
+const mobilenumber = document.getElementById('mobilevalue');
+mobilenumber.value = 0;
+
 function mobilequantity(isincress){
     const mobilenumber = document.getElementById('mobilevalue');
     const mobilecount = parseInt(mobilenumber.value);
